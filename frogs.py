@@ -5,7 +5,7 @@ def solution(blocks):
     max_distance = [0] * n
 
     #max distance when frogs jump to the right
-    for i in range(1,n):
+    for i in range(1, n):
         if blocks[i] >= blocks[i - 1]:
             max_distance[i] = max_distance[i-1]+1
 
@@ -19,7 +19,7 @@ def solution(blocks):
 
 
 #test case
-blocks1 = [3,6,9,7]
+blocks1 = [2,6,8,5]
 print(solution(blocks1)) #2
 
 blocks2 = [1,5,5,2,6]
